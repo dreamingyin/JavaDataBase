@@ -6,11 +6,11 @@
 com.mysql.jdbc.Driver jdbc:mysql://localhost:3306/db3
 #### 连接池参数 
 #### 初始化链接数量
-<property name="initialPoolSize">5</property>
+#### property name="initialPoolSize">5</property
 #### 存在的最大连接数量
-<property name="maxPoolSize">10</property>
+#### property name="maxPoolSize">10</property
 #### 参数检查时间
-<property name="checkoutTimeout">3000</property>
+#### property name="checkoutTimeout">3000</property
 创建连接池对象 ComboPooledDataSource 
 实现代码： DataSource ds = new ComboPooledDataSource(); 
 获取连接方法： getConnection 
