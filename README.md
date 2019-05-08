@@ -68,7 +68,9 @@ maxWait=3000
 public class DruidDemo01 {
     public static void main(String[] args) throws Exception {
         //1.导入jar包，配置文件
+        
         //2.通过类加载器找到配置文件
+        
         Properties pro = new Properties();
         InputStream in = DruidDemo01.class.getClassLoader().getResourceAsStream("druid.properties");
         pro.load(in);
