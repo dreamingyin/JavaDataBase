@@ -1,6 +1,6 @@
-DBC连接池C3P0和Druid 常见的连接池有两种，分别是 C3P0 和阿里巴巴提供的Druid。 C3P0的使用步骤：
+# JDBC连接池C3P0和Druid 常见的连接池有两种，分别是 C3P0 和阿里巴巴提供的Druid。 C3P0的使用步骤：
 
-导入jar包： c3p0-0.9.5.2.jar 和其依赖包：mchange-commons-java-0.2.12.jar 定义配置文件：
+## 导入jar包： c3p0-0.9.5.2.jar 和其依赖包：mchange-commons-java-0.2.12.jar 定义配置文件：
 
 名称： c3p0.properties || c3p0-config.xml。放置于src目录下 配置文件的配置详解见代码注释中：
 com.mysql.jdbc.Driver jdbc:mysql://localhost:3306/db3 root root
@@ -24,7 +24,7 @@ public static void main(String[] args) throws SQLException {
 	}
 }
 
-Druid的使用步骤：
+## Druid的使用步骤：
 
 导入jar包 druid-1.0.9.jar
 定义配置文件
@@ -41,7 +41,7 @@ initialSize=5
 maxActive=10 
 maxWait=3000
 
-示例代码：
+### 示例代码：
 
 public class DruidDemo01 { public static void main(String[] args) throws Exception { 
 //1.导入jar包，配置文件
